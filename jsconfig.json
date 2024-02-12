@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "allowJs": true,
+        "checkJs": true,
+        "strict": true,
+        "lib": ["dom", "es6"],
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework"
+        ],
+        "module": "CommonJS",
+    },
+    "include" : [
+        "test/specs/*.js",
+        "test/specs/*.json",
+        "test/pageobjects/*.js",
+        "**/*.json",
+        "**/*.js",
+        "node_modules/@wdio/sync",
+        "test/workflowLibrary/loginWorkFlow.js",
+        "node_modules/@wdio/mocha-framework"
+    ],
+    "exclude": ["node_modules"]
+}
